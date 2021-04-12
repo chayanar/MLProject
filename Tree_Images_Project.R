@@ -35,7 +35,7 @@ nb_train_samples = 74
 # training and testing tree dataframe of images that were converted from python
 
 dataframe_tree_train <- "/Users/chayan/Desktop/Project/Final Data sheets/Trees/Images/exportImage__Train_DF.csv"
-dataframe_tree_train_read <- read.csv(datafram_tree_train)
+dataframe_tree_train_read <- read.csv(dataframe_tree_train)
 
 # creating a training generator
 
@@ -66,7 +66,7 @@ train_datagen <- image_data_generator(
 
 train_generator <- flow_images_from_dataframe(
   # This is the datafame file
-  datafram_tree_train_read,
+  dataframe_tree_train_read,
   #adding the above train generator
   generator = train_datagen,
   # This is the data generator
